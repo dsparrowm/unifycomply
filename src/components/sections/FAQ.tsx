@@ -80,7 +80,7 @@ export default function FAQ() {
                             From setup to support, here are the answers you need to launch faster with confidence.
                         </p>
 
-                        <button className="bg-[#0d4a45] hover:bg-[#093531] text-white px-8 py-3.5 rounded-full font-semibold flex items-center gap-2 transition-colors shadow-sm">
+                        <button className="flex cursor-pointer items-center gap-2 rounded-full bg-[#0d4a45] px-8 py-3.5 font-semibold text-white shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#093531] hover:shadow-[0_16px_30px_rgba(13,74,69,0.22)] active:scale-[0.98]">
                             Get Started <ChevronRight className="w-4 h-4 text-teal-200" />
                         </button>
                     </div>
@@ -96,7 +96,7 @@ export default function FAQ() {
                                 >
                                     <button
                                         onClick={() => setOpenIndex(isOpen ? null : i)}
-                                        className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                                        className="w-full cursor-pointer flex items-center justify-between p-6 text-left transition-colors duration-300 hover:bg-white/70 focus:outline-none"
                                     >
                                         <span className="font-medium text-gray-900 text-[17px] pr-8">{faq.q}</span>
                                         <ChevronDown

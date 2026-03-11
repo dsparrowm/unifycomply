@@ -115,8 +115,8 @@ export default function Pricing() {
                                 flexDirection: "column"
                             }}
                             className={`pricing-card overflow-hidden transition-all duration-300 ${tier.isPro
-                                    ? "bg-white border-2 border-teal-800 shadow-xl md:-my-4"
-                                    : "bg-slate-50 border border-slate-100"
+                                ? "bg-white border-2 border-teal-800 shadow-xl md:-my-4"
+                                : "bg-slate-50 border border-slate-100"
                                 }`}
                         >
                             {/* Card Top Section */}
@@ -138,9 +138,9 @@ export default function Pricing() {
                                 <p className="text-gray-500 text-[15px] mb-8 min-h-[44px]">
                                     {tier.description}
                                 </p>
-                                <button className={`w-full py-3.5 rounded-full font-semibold flex items-center justify-center gap-2 transition-all shadow-sm border ${tier.isPro
-                                        ? "bg-teal-900 text-white hover:bg-teal-950 border-teal-900"
-                                        : "bg-white text-gray-900 hover:bg-gray-50 border-gray-200"
+                                <button className={`w-full cursor-pointer py-3.5 rounded-full font-semibold flex items-center justify-center gap-2 transition-all duration-300 ease-out shadow-sm border active:scale-[0.98] hover:-translate-y-0.5 ${tier.isPro
+                                    ? "bg-teal-900 text-white hover:bg-teal-950 border-teal-900 hover:shadow-[0_16px_30px_rgba(13,74,69,0.22)]"
+                                    : "bg-white text-gray-900 hover:bg-gray-50 border-gray-200 hover:shadow-[0_12px_24px_rgba(15,23,42,0.08)]"
                                     }`}>
                                     Get Started Now <ChevronRight className={`w-4 h-4 ${tier.isPro ? "text-teal-200" : "text-gray-400"}`} />
                                 </button>

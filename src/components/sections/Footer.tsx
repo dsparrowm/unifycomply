@@ -22,7 +22,7 @@ export default function Footer() {
                         <p className="text-[#a3a6a4] text-lg mb-10 max-w-lg leading-relaxed">
                             Join financial companies using UnifyComply to onboard customers faster while staying fully compliant.
                         </p>
-                        <button className="bg-white text-[#242625] px-8 py-3.5 rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-sm text-[15px]">
+                        <button className="cursor-pointer rounded-full bg-white px-8 py-3.5 text-[15px] font-semibold text-[#242625] shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-gray-100 hover:shadow-[0_16px_30px_rgba(0,0,0,0.18)] active:scale-[0.98]">
                             Request a Demo
                         </button>
                     </div>

@@ -116,13 +116,13 @@ export default function Testimonials() {
                     <div className="test-header-el flex items-center gap-4">
                         <button
                             onClick={() => scroll('left')}
-                            className="w-12 h-12 rounded-xl flex items-center justify-center border border-gray-200 bg-white text-text-main hover:bg-gray-50 transition-colors shadow-sm active:scale-95"
+                            className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl border border-gray-200 bg-white text-text-main shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-gray-50 hover:shadow-[0_12px_24px_rgba(15,23,42,0.08)] active:scale-95"
                         >
                             <ArrowLeft className="w-5 h-5" />
                         </button>
                         <button
                             onClick={() => scroll('right')}
-                            className="w-12 h-12 rounded-xl flex items-center justify-center border border-gray-200 bg-white text-text-main hover:bg-gray-50 transition-colors shadow-sm active:scale-95"
+                            className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-xl border border-gray-200 bg-white text-text-main shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-gray-50 hover:shadow-[0_12px_24px_rgba(15,23,42,0.08)] active:scale-95"
                         >
                             <ArrowRight className="w-5 h-5" />
                         </button>

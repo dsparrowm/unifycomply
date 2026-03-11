@@ -207,7 +207,7 @@ export default function FeatureShowcase() {
                         <p className="text-[#596f84] text-lg leading-relaxed mb-10 max-w-xl">
                             UnifyComply doesn't just collect results — it analyzes them. Our AI engine combines identity, banking, TM and AML signals to generate explainable analysis that help compliance teams focus on what truly matters.
                         </p>
-                        <button className="inline-flex items-center gap-2 bg-white text-text-main font-semibold px-6 py-3 rounded-full shadow-sm hover:shadow-md transition-shadow">
+                        <button className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-text-main shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(15,23,42,0.10)] active:scale-[0.98]">
                             Learn More <ChevronRight className="w-4 h-4 text-gray-400" />
                         </button>
                     </div>
@@ -227,7 +227,7 @@ export default function FeatureShowcase() {
                         <p className="text-[#3b5e54] text-lg leading-relaxed mb-10 max-w-lg">
                             From AML checks to real-time transaction monitoring, our system handles continuous screening and flagging so your team focuses on exceptions, not routine reviews.
                         </p>
-                        <button className="inline-flex items-center gap-2 bg-white text-text-main font-semibold px-6 py-3 rounded-full shadow-sm hover:shadow-md transition-shadow">
+                        <button className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-text-main shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(15,23,42,0.10)] active:scale-[0.98]">
                             Learn More <ChevronRight className="w-4 h-4 text-gray-400" />
                         </button>
                     </div>

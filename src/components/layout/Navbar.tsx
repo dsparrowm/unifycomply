@@ -36,16 +36,16 @@ export default function Navbar() {
                     </div>
 
                     <div className="hidden md:flex items-center gap-8 text-[15px] font-semibold text-slate-800">
-                        <Link href="#products" className="hover:text-[#164e43] transition-colors">
+                        <Link href="#products" className="relative transition-all duration-300 hover:-translate-y-0.5 hover:text-[#164e43] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:rounded-full after:bg-[#164e43] after:transition-transform after:duration-300 hover:after:scale-x-100">
                             Products
                         </Link>
-                        <Link href="#pricing" className="hover:text-[#164e43] transition-colors">
+                        <Link href="#pricing" className="relative transition-all duration-300 hover:-translate-y-0.5 hover:text-[#164e43] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:rounded-full after:bg-[#164e43] after:transition-transform after:duration-300 hover:after:scale-x-100">
                             Pricing
                         </Link>
-                        <Link href="#resources" className="hover:text-[#164e43] transition-colors">
+                        <Link href="#resources" className="relative transition-all duration-300 hover:-translate-y-0.5 hover:text-[#164e43] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:rounded-full after:bg-[#164e43] after:transition-transform after:duration-300 hover:after:scale-x-100">
                             Resources
                         </Link>
-                        <Link href="#contact" className="hover:text-[#164e43] transition-colors">
+                        <Link href="#contact" className="relative transition-all duration-300 hover:-translate-y-0.5 hover:text-[#164e43] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:rounded-full after:bg-[#164e43] after:transition-transform after:duration-300 hover:after:scale-x-100">
                             Contact Us
                         </Link>
                     </div>
@@ -53,7 +53,7 @@ export default function Navbar() {
                     <div className="flex items-center">
                         <Button
                             variant="outline"
-                            className="hidden sm:inline-flex rounded-full border-gray-200 text-[#164e43] font-semibold hover:bg-gray-50 bg-white"
+                            className="hidden bg-white font-semibold text-[#164e43] sm:inline-flex"
                         >
                             Get Started
                         </Button>
