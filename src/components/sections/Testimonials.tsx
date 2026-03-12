@@ -16,7 +16,7 @@ const TestimonialsIcon = () => (
 
 const testimonials = [
     {
-        name: "Chukwudi Peter",
+        name: "Rose Peterson",
         role: "Compliance Officer",
         quote: "15 African markets, one unified system. UnifyComply ended our compliance chaos and actually understands local regulations.",
         avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
@@ -30,7 +30,7 @@ const testimonials = [
         bg: "bg-[#a4c2c7]",
     },
     {
-        name: "Alex Carter",
+        name: "Alex Richardson",
         role: "Founder at PayStripe",
         quote: "Compliance software people actually like using? Yes. Smart alerts, clean interface, real results. 96% adoption in two weeks.",
         avatar: "https://i.pravatar.cc/150?u=a04258a2462d826712d",
@@ -44,14 +44,14 @@ const testimonials = [
         bg: "bg-[#f1cdb6]",
     },
     {
-        name: "David O'Connor",
+        name: "Judith O'Connor",
         role: "Chief Operating Officer",
         quote: "UnifyComply gives me absolute peace of mind. Their real-time audit trails mean we're always ready for regulatory examinations.",
         avatar: "https://i.pravatar.cc/150?u=a04258a2462d826715d",
         bg: "bg-[#b1c3d1]",
     },
     {
-        name: "Elena Rodriguez",
+        name: "Rodriguez Depaul",
         role: "Head of AML",
         quote: "The explainable AI is a game-changer. When a transaction is flagged, we know exactly why, down to the specific data point.",
         avatar: "https://i.pravatar.cc/150?u=a042581f4e29026028d",

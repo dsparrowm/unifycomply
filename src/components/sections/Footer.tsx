@@ -106,7 +106,7 @@ export default function Footer() {
 
                 {/* Copyright */}
                 <div className="bg-[#fcfdfc] border border-gray-100/50 rounded-2xl py-5 flex items-center justify-center text-[15px] text-gray-500">
-                    © 2026 Unifycomply. All rights reserved.
+                    © {new Date().getFullYear()} Unifycomply. All rights reserved.
                 </div>
 
             </div>

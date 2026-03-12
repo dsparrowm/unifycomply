@@ -29,7 +29,21 @@ export default function SmoothScrollProvider({ children }: { children: React.Rea
 
         gsap.ticker.lagSmoothing(0, 0);
 
+        const handleAnchorClick = (e: MouseEvent) => {
+            const anchor = (e.target as HTMLElement).closest("a");
+            if (!anchor) return;
+            const href = anchor.getAttribute("href");
+            if (!href || !href.startsWith("#")) return;
+            const el = document.getElementById(href.slice(1));
+            if (!el) return;
+            e.preventDefault();
+            lenis.scrollTo(el, { offset: 0 });
+        };
+
+        document.addEventListener("click", handleAnchorClick);
+
         return () => {
+            document.removeEventListener("click", handleAnchorClick);
             lenis.destroy();
             gsap.ticker.remove(tick);
         };
