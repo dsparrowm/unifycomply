@@ -18,7 +18,7 @@ export default function Home() {
 
       <HowItWorks />
 
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       <Pricing />
 
