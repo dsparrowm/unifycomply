@@ -31,7 +31,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section ref={containerRef} className="pt-18 pb-16 overflow-hidden relative">
+        <section id="hero" ref={containerRef} className="scroll-mt-28 pt-18 pb-16 overflow-hidden relative">
             <div className="container mx-auto px-6 max-w-5xl text-center flex flex-col items-center">
 
                 {/* Badge */}

@@ -84,7 +84,7 @@ export default function Pricing() {
     }, { scope: containerRef });
 
     return (
-        <section className="py-24 bg-white relative overflow-hidden" ref={containerRef} id="pricing">
+        <section className="scroll-mt-28 py-24 bg-white relative overflow-hidden" ref={containerRef} id="pricing">
             <div className="container mx-auto px-6 max-w-6xl relative z-10">
 
                 {/* Header Section */}

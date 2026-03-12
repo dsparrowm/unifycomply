@@ -77,7 +77,7 @@ export default function FeaturesGrid() {
         <section
             id="products"
             ref={sectionRef}
-            className="relative isolate overflow-hidden bg-[linear-gradient(180deg,#f7f8f6_0%,#f7f8f6_70%,#edf4f3_100%)] py-28"
+            className="scroll-mt-28 relative isolate overflow-hidden bg-[linear-gradient(180deg,#f7f8f6_0%,#f7f8f6_70%,#edf4f3_100%)] py-28"
         >
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[38%] bg-[radial-gradient(90%_80%_at_0%_100%,rgba(219,237,239,0.9),transparent_68%)]" />
 
