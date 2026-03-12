@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 
 export default function Hero() {
     const containerRef = useRef<HTMLDivElement>(null);
+    const demoUrl = "https://calendly.com/akinsanyaowolabi33/30min";
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -61,7 +62,11 @@ export default function Hero() {
 
                 {/* CTA */}
                 <div className="hero-cta flex gap-4 items-center mb-8">
-                    <Button size="lg" className="rounded-full bg-[#0a3f33] hover:bg-[#073026] text-white px-8 h-14 text-base font-medium shadow-md">
+                    <Button
+                        size="lg"
+                        className="rounded-full bg-[#0a3f33] hover:bg-[#073026] text-white px-10 h-16 text-lg font-semibold shadow-md md:px-12"
+                        onClick={() => window.open(demoUrl, "_blank", "noopener,noreferrer")}
+                    >
                         Book a Demo
                     </Button>
                 </div>

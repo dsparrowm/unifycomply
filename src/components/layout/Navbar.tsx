@@ -52,10 +52,10 @@ export default function Navbar() {
 
                     <div className="flex items-center">
                         <Button
-                            variant="outline"
-                            className="hidden bg-white font-semibold text-[#164e43] sm:inline-flex"
+                            size="lg"
+                            className="hidden font-semibold sm:inline-flex"
                         >
-                            Get Started
+                            Book a Demo
                         </Button>
                     </div>
                 </nav>
