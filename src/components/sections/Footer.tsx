@@ -3,9 +3,11 @@ import Link from "next/link";
 import { Facebook, Linkedin, Instagram, Send } from "lucide-react";
 import Image from "next/image";
 
+const demoUrl = "https://calendly.com/akinsanyaowolabi33/30min";
+
 export default function Footer() {
     return (
-        <footer className="bg-white pt-24 pb-8">
+        <footer id="contact" className="bg-white pt-24 pb-8">
             <div className="container mx-auto px-6 max-w-6xl">
 
                 {/* CTO Block */}
@@ -22,9 +24,14 @@ export default function Footer() {
                         <p className="text-[#a3a6a4] text-lg mb-10 max-w-lg leading-relaxed">
                             Join financial companies using UnifyComply to onboard customers faster while staying fully compliant.
                         </p>
-                        <button className="cursor-pointer rounded-full bg-white px-8 py-3.5 text-[15px] font-semibold text-[#242625] shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-gray-100 hover:shadow-[0_16px_30px_rgba(0,0,0,0.18)] active:scale-[0.98]">
+                        <a
+                            href={demoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cursor-pointer rounded-full bg-white px-8 py-3.5 text-[15px] font-semibold text-[#242625] shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-gray-100 hover:shadow-[0_16px_30px_rgba(0,0,0,0.18)] active:scale-[0.98]"
+                        >
                             Request a Demo
-                        </button>
+                        </a>
                     </div>
                 </div>
 

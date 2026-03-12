@@ -75,6 +75,7 @@ export default function FeaturesGrid() {
 
     return (
         <section
+            id="products"
             ref={sectionRef}
             className="relative isolate overflow-hidden bg-[linear-gradient(180deg,#f7f8f6_0%,#f7f8f6_70%,#edf4f3_100%)] py-28"
         >

@@ -36,6 +36,7 @@ const faqs = [
 export default function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
     const containerRef = useRef<HTMLDivElement>(null);
+    const demoUrl = "https://calendly.com/akinsanyaowolabi33/30min";
 
     useGSAP(() => {
         const tl = gsap.timeline({
@@ -80,9 +81,14 @@ export default function FAQ() {
                             From setup to support, here are the answers you need to launch faster with confidence.
                         </p>
 
-                        <button className="flex cursor-pointer items-center gap-2 rounded-full bg-[#0d4a45] px-8 py-3.5 font-semibold text-white shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#093531] hover:shadow-[0_16px_30px_rgba(13,74,69,0.22)] active:scale-[0.98]">
-                            Get Started <ChevronRight className="w-4 h-4 text-teal-200" />
-                        </button>
+                        <a
+                            href={demoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex cursor-pointer items-center gap-2 rounded-full bg-[#0d4a45] px-8 py-3.5 font-semibold text-white shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#093531] hover:shadow-[0_16px_30px_rgba(13,74,69,0.22)] active:scale-[0.98]"
+                        >
+                            Book a Demo <ChevronRight className="w-4 h-4 text-teal-200" />
+                        </a>
                     </div>
 
                     {/* Right Column - Accordion */}

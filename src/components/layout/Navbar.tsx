@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/Button";
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
+    const demoUrl = "https://calendly.com/akinsanyaowolabi33/30min";
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -42,7 +43,7 @@ export default function Navbar() {
                         <Link href="#pricing" className="relative transition-all duration-300 hover:-translate-y-0.5 hover:text-[#164e43] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:rounded-full after:bg-[#164e43] after:transition-transform after:duration-300 hover:after:scale-x-100">
                             Pricing
                         </Link>
-                        <Link href="#resources" className="relative transition-all duration-300 hover:-translate-y-0.5 hover:text-[#164e43] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:rounded-full after:bg-[#164e43] after:transition-transform after:duration-300 hover:after:scale-x-100">
+                        <Link href="#faq" className="relative transition-all duration-300 hover:-translate-y-0.5 hover:text-[#164e43] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:rounded-full after:bg-[#164e43] after:transition-transform after:duration-300 hover:after:scale-x-100">
                             Resources
                         </Link>
                         <Link href="#contact" className="relative transition-all duration-300 hover:-translate-y-0.5 hover:text-[#164e43] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:rounded-full after:bg-[#164e43] after:transition-transform after:duration-300 hover:after:scale-x-100">
@@ -54,6 +55,7 @@ export default function Navbar() {
                         <Button
                             size="lg"
                             className="hidden font-semibold sm:inline-flex"
+                            onClick={() => window.open(demoUrl, "_blank", "noopener,noreferrer")}
                         >
                             Book a Demo
                         </Button>
