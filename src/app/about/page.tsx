@@ -106,7 +106,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="relative w-full aspect-[4/3] md:aspect-[2/1] rounded-3xl overflow-hidden shadow-sm flex items-center justify-center p-6 md:p-12 bg-gray-200 hero-image opacity-0">
+          <div className="relative w-full h-auto min-h-[500px] md:min-h-0 md:aspect-[2/1] rounded-3xl overflow-hidden shadow-sm flex items-center justify-center p-4 py-10 md:p-12 bg-gray-200 hero-image opacity-0">
             {/* Image Placeholder Background */}
             <Image
               src="/images/aboutUs_hero_img.png"
@@ -117,7 +117,7 @@ export default function AboutPage() {
             />
 
             {/* Floating Card - Outer White Container */}
-            <div className="relative z-10 w-full max-w-[90%] md:max-w-4xl bg-white rounded-[2rem] p-4 md:p-6 shadow-[0_20px_50px_rgba(0,0,0,0.15)] flex items-center justify-center hero-card opacity-0">
+            <div className="relative z-10 w-full max-w-[95%] md:max-w-4xl bg-white rounded-[2rem] p-3 md:p-6 shadow-[0_20px_50px_rgba(0,0,0,0.15)] flex items-center justify-center hero-card opacity-0">
               {/* Inner Gray Container */}
               <div className="bg-[#f8faf9] rounded-2xl md:rounded-3xl p-6 md:p-12 w-full h-full border-[2px] border-gray-100/80 shadow-sm">
                 <div className="w-12 h-12 rounded-xl border border-gray-100 bg-white flex items-center justify-center mb-6 text-gray-700 shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
@@ -181,7 +181,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="relative w-full aspect-[4/3] md:aspect-[2/1] bg-gray-200 rounded-3xl overflow-hidden shadow-sm flex flex-col md:flex-row gap-6 lg:gap-8 items-center justify-center p-6 md:p-12 mission-image">
+          <div className="relative w-full h-auto min-h-[600px] md:min-h-0 md:aspect-[2/1] bg-gray-200 rounded-3xl overflow-hidden shadow-sm flex flex-col md:flex-row gap-6 lg:gap-8 items-center justify-center p-4 py-10 md:p-12 mission-image">
             <Image
               src="/images/aboutUs_mission_img.png"
               alt="UnifyComply Mission & Vision"
@@ -247,6 +247,9 @@ export default function AboutPage() {
                   alt="Owolabi Babatunde Akinsanya"
                   fill
                   className="object-cover object-top scale-[1.25] origin-top"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  loading="eager"
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-1">Owolabi Babatunde Akinsanya</h3>
@@ -264,6 +267,9 @@ export default function AboutPage() {
                   alt="Adeboye Stephen Oyeniran"
                   fill
                   className="object-cover object-top"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  loading="eager"
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-1">Adeboye Stephen Oyeniran</h3>
@@ -274,13 +280,16 @@ export default function AboutPage() {
             </div>
 
             {/* Team Member 3 */}
-            <div className="bg-white rounded-3xl p-6 flex flex-col shadow-[0_5px_15px_rgba(0,0,0,0.03)] border border-gray-50">
+            <div className="bg-white rounded-3xl p-6 flex flex-col shadow-[0_5px_15px_rgba(0,0,0,0.03)] border border-gray-50 team-card opacity-0 translate-y-8">
               <div className="w-full aspect-[4/3] bg-gray-200 rounded-2xl mb-6 overflow-hidden relative">
                 <Image
                   src="/images/coo_img.png"
                   alt="Ayobami Ogunkoya"
                   fill
                   className="object-cover object-top"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  loading="eager"
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-1">Ayobami Ogunkoya</h3>

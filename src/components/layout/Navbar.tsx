@@ -5,9 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const demoUrl = "https://calendly.com/akinsanyaowolabi33/30min";
 
     useEffect(() => {
@@ -56,7 +58,7 @@ export default function Navbar() {
                         </Link>
                     </div>
 
-                    <div className="flex items-center">
+                    <div className="flex items-center gap-4">
                         <Button
                             size="lg"
                             className="hidden font-semibold sm:inline-flex"
@@ -64,8 +66,62 @@ export default function Navbar() {
                         >
                             Book a Demo
                         </Button>
+
+                        {/* Mobile Menu Toggle */}
+                        <button
+                            className="md:hidden p-2 text-slate-800 transition-colors bg-slate-50 hover:bg-slate-100 rounded-lg"
+                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                            aria-label="Toggle mobile menu"
+                        >
+                            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                        </button>
                     </div>
                 </nav>
+
+                {/* Mobile Menu */}
+                {mobileMenuOpen && (
+                    <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-slate-100 shadow-xl py-4 px-6 flex flex-col gap-4 max-h-[80vh] overflow-y-auto pointer-events-auto">
+                        <Link
+                            href="/#products"
+                            className="text-[15px] font-semibold text-slate-800 py-2 border-b border-slate-50"
+                            onClick={() => setMobileMenuOpen(false)}
+                        >
+                            Products
+                        </Link>
+                        <Link
+                            href="/#faq"
+                            className="text-[15px] font-semibold text-slate-800 py-2 border-b border-slate-50"
+                            onClick={() => setMobileMenuOpen(false)}
+                        >
+                            Resources
+                        </Link>
+                        <Link
+                            href="/about"
+                            className="text-[15px] font-semibold text-slate-800 py-2 border-b border-slate-50"
+                            onClick={() => setMobileMenuOpen(false)}
+                        >
+                            About Us
+                        </Link>
+                        <Link
+                            href="/#contact"
+                            className="text-[15px] font-semibold text-slate-800 py-2 border-b border-slate-50"
+                            onClick={() => setMobileMenuOpen(false)}
+                        >
+                            Contact Us
+                        </Link>
+                        <div className="pt-2 sm:hidden">
+                            <Button
+                                className="w-full font-semibold"
+                                onClick={() => {
+                                    setMobileMenuOpen(false);
+                                    window.open(demoUrl, "_blank", "noopener,noreferrer");
+                                }}
+                            >
+                                Book a Demo
+                            </Button>
+                        </div>
+                    </div>
+                )}
             </div>
         </header>
     );
