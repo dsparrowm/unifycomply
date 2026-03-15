@@ -193,7 +193,7 @@ export default function FeatureShowcase() {
                 {/* Card 1 */}
                 <div className="showcase-card bg-[#eef1fa] rounded-[2.5rem] p-12 md:p-16 lg:p-20 flex flex-col lg:flex-row items-center gap-12 lg:gap-24 relative overflow-hidden">
                     {/* Mockup */}
-                    <div className="flex-1 w-full order-1 relative z-10">
+                    <div className="hidden md:block flex-1 w-full order-1 relative z-10">
                         <VerificationMockup />
                     </div>
 
@@ -245,7 +245,7 @@ export default function FeatureShowcase() {
                     </div>
 
                     {/* Mockup */}
-                    <div className="flex-1 w-full relative z-10 -mr-12 md:-mr-16 lg:-mr-20 h-full">
+                    <div className="hidden md:block flex-1 w-full relative z-10 -mr-12 md:-mr-16 lg:-mr-20 h-full">
                         <ScreeningMockup />
                     </div>
                 </div>
