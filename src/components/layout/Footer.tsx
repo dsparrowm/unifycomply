@@ -29,33 +29,33 @@ export default function Footer() {
                     <div className="space-y-4">
                         <h4 className="font-semibold text-text-main">Company</h4>
                         <ul className="space-y-3 text-sm text-text-muted">
-                            <li><Link href="#" className="hover:text-primary">Home</Link></li>
-                            <li><Link href="#" className="hover:text-primary">About us</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Pricing</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Features</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Blog Details</Link></li>
+                            <li><Link href="/#hero" className="hover:text-primary">Home</Link></li>
+                            <li><Link href="/about" className="hover:text-primary">About us</Link></li>
+                            <li><Link href="/#pricing" className="hover:text-primary">Pricing</Link></li>
+                            <li><Link href="/#features" className="hover:text-primary">Features</Link></li>
+                            <li><Link href="/#faq" className="hover:text-primary">Blog Details</Link></li>
                         </ul>
                     </div>
 
                     <div className="space-y-4">
                         <h4 className="font-semibold text-text-main">Products</h4>
                         <ul className="space-y-3 text-sm text-text-muted">
-                            <li><Link href="#" className="hover:text-primary">API Integration</Link></li>
-                            <li><Link href="#" className="hover:text-primary">KYC / KYB</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Bank Analysis</Link></li>
-                            <li><Link href="#" className="hover:text-primary">AML Screening</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Transaction Monitoring</Link></li>
+                            <li><Link href="/#products" className="hover:text-primary">API Integration</Link></li>
+                            <li><Link href="/#products" className="hover:text-primary">KYC / KYB</Link></li>
+                            <li><Link href="/#products" className="hover:text-primary">Bank Analysis</Link></li>
+                            <li><Link href="/#products" className="hover:text-primary">AML Screening</Link></li>
+                            <li><Link href="/#products" className="hover:text-primary">Transaction Monitoring</Link></li>
                         </ul>
                     </div>
 
                     <div className="space-y-4">
                         <h4 className="font-semibold text-text-main">Solutions</h4>
                         <ul className="space-y-3 text-sm text-text-muted">
-                            <li><Link href="#" className="hover:text-primary">Fintech & Neobanks</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Payment Providers</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Digital Lenders</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Crypto & Web3 Platforms</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Cross-Border Financial</Link></li>
+                            <li><Link href="/#products" className="hover:text-primary">Fintech & Neobanks</Link></li>
+                            <li><Link href="/#products" className="hover:text-primary">Payment Providers</Link></li>
+                            <li><Link href="/#products" className="hover:text-primary">Digital Lenders</Link></li>
+                            <li><Link href="/#products" className="hover:text-primary">Crypto & Web3 Platforms</Link></li>
+                            <li><Link href="/#products" className="hover:text-primary">Cross-Border Financial</Link></li>
                         </ul>
                     </div>
                 </div>

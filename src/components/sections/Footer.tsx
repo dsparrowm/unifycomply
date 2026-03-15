@@ -73,31 +73,31 @@ export default function Footer() {
                         {/* Company */}
                         <div className="flex flex-col gap-5">
                             <h4 className="font-semibold text-gray-900 text-[17px] mb-1">Company</h4>
-                            <Link href="#hero" className="text-[#323936] font-medium text-[15px] hover:text-[#0f3c37] transition-colors">Home</Link>
-                            <Link href="#hero" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">About us</Link>
-                            <Link href="#pricing" className="text-gray-500 hidden text-[15px] hover:text-[#0f3c37] transition-colors">Pricing</Link>
-                            <Link href="#features" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Features</Link>
+                            <Link href="/#hero" className="text-[#323936] font-medium text-[15px] hover:text-[#0f3c37] transition-colors">Home</Link>
+                            <Link href="/about" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">About us</Link>
+                            <Link href="/#pricing" className="text-gray-500 hidden text-[15px] hover:text-[#0f3c37] transition-colors">Pricing</Link>
+                            <Link href="/#features" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Features</Link>
 
                         </div>
 
                         {/* Products */}
                         <div className="flex flex-col gap-5">
                             <h4 className="font-semibold text-gray-900 text-[17px] mb-1">Products</h4>
-                            <Link href="#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">API Integration</Link>
-                            <Link href="#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">KYC/ KYB</Link>
-                            <Link href="#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Bank Analysis</Link>
-                            <Link href="#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">AML Screening</Link>
-                            <Link href="#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Transaction Monitoring</Link>
+                            <Link href="/#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">API Integration</Link>
+                            <Link href="/#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">KYC/ KYB</Link>
+                            <Link href="/#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Bank Analysis</Link>
+                            <Link href="/#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">AML Screening</Link>
+                            <Link href="/#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Transaction Monitoring</Link>
                         </div>
 
                         {/* Solutions */}
                         <div className="flex flex-col gap-5">
                             <h4 className="font-semibold text-gray-900 text-[17px] mb-1">Solutions</h4>
-                            <Link href="#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Fintech & Neobanks</Link>
-                            <Link href="#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Payment Providers</Link>
-                            <Link href="#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Digital Lenders</Link>
-                            <Link href="#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Crypto & Web3 Platforms</Link>
-                            <Link href="#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Cross-Border Financial</Link>
+                            <Link href="/#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Fintech & Neobanks</Link>
+                            <Link href="/#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Payment Providers</Link>
+                            <Link href="/#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Digital Lenders</Link>
+                            <Link href="/#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Crypto & Web3 Platforms</Link>
+                            <Link href="/#products" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Cross-Border Financial</Link>
                         </div>
                     </div>
 
