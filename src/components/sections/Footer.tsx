@@ -39,13 +39,16 @@ export default function Footer() {
 
                     {/* Logo & Description */}
                     <div className="lg:col-span-4 flex flex-col items-start pr-8">
-                        <Image
-                            src="/images/logo.svg"
-                            alt="UnifyComply Logo"
-                            width={180}
-                            height={40}
-                            priority
-                        />
+                        <Link href="/">
+                            <Image
+                                src="/images/logo.svg"
+                                alt="UnifyComply Logo"
+                                width={180}
+                                height={40}
+                                priority
+                                className="cursor-pointer"
+                            />
+                        </Link>
                         <p className="text-gray-500 text-[15px] mt-4 leading-relaxed mb-8">
                             We build a safer financial ecosystem by empowering organizations with real-time tools that keep companies compliant!
                         </p>

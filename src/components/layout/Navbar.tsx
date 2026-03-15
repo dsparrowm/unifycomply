@@ -26,14 +26,16 @@ export default function Navbar() {
             <div className="container mx-auto px-6 max-w-6xl pointer-events-auto">
                 <nav className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                        <Image
-                            src="/images/logo.svg"
-                            alt="UnifyComply Logo"
-                            width={180}
-                            height={40}
-                            priority
-                        />
-
+                        <Link href="/">
+                            <Image
+                                src="/images/logo.svg"
+                                alt="UnifyComply Logo"
+                                width={180}
+                                height={40}
+                                priority
+                                className="cursor-pointer"
+                            />
+                        </Link>
                     </div>
 
                     <div className="hidden md:flex items-center gap-8 text-[15px] font-semibold text-slate-800">
