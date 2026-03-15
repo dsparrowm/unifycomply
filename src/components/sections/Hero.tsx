@@ -72,7 +72,7 @@ export default function Hero() {
                 </div>
 
                 {/* Stats Row */}
-                <div className="hero-stats flex items-center gap-3 text-[14px] text-slate-500 mb-20">
+                <div className="hero-stats hidden flex items-center gap-3 text-[14px] text-slate-500 mb-20">
                     <div className="flex -space-x-3">
                         {[1, 2, 3].map((i) => (
                             <img
@@ -91,7 +91,7 @@ export default function Hero() {
                 </div>
 
                 {/* Trusted By Sections with Technical Grid Borders */}
-                <div className="w-full relative mt-12 py-12">
+                <div className="w-full relative mt-12 py-12 hidden">
                     {/* Top dashed line with corner crosses */}
                     <div className="absolute top-0 left-0 w-full h-[1px] border-t border-dashed border-gray-200">
                         <div className="absolute -top-[4px] left-0 text-gray-300 text-xs">+</div>

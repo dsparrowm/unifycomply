@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { Facebook, Linkedin, Instagram, Send } from "lucide-react";
 import Image from "next/image";
@@ -47,7 +46,7 @@ export default function Footer() {
                             height={40}
                             priority
                         />
-                        <p className="text-gray-500 text-[15px] leading-relaxed mb-8">
+                        <p className="text-gray-500 text-[15px] mt-4 leading-relaxed mb-8">
                             We build a safer financial ecosystem by empowering organizations with real-time tools that keep companies compliant!
                         </p>
                         <div className="flex items-center gap-3">
@@ -76,7 +75,7 @@ export default function Footer() {
                             <h4 className="font-semibold text-gray-900 text-[17px] mb-1">Company</h4>
                             <Link href="#hero" className="text-[#323936] font-medium text-[15px] hover:text-[#0f3c37] transition-colors">Home</Link>
                             <Link href="#hero" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">About us</Link>
-                            <Link href="#pricing" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Pricing</Link>
+                            <Link href="#pricing" className="text-gray-500 hidden text-[15px] hover:text-[#0f3c37] transition-colors">Pricing</Link>
                             <Link href="#features" className="text-gray-500 text-[15px] hover:text-[#0f3c37] transition-colors">Features</Link>
 
                         </div>

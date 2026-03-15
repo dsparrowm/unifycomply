@@ -26,7 +26,7 @@ const features = [
     },
     {
         icon: <Binary className="h-[18px] w-[18px] text-[#1a2522] stroke-[1.8]" />,
-        title: "AI-Powered System",
+        title: "AI-powered SAR Rationalization",
         description: "Automated systems that provide a high level of true positive alerts and dynamic risk scoring. AI assisted SAR rational documentation.",
         colSpan: "col-span-1 md:col-span-3",
     },
