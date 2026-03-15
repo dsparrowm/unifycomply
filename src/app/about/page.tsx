@@ -17,25 +17,25 @@ export default function AboutPage() {
   useGSAP(() => {
     // 1. Hero Animations
     const heroTl = gsap.timeline();
-    heroTl.fromTo(".hero-text > *", 
+    heroTl.fromTo(".hero-text > *",
       { y: 50, opacity: 0 },
       { y: 0, opacity: 1, duration: 1, stagger: 0.2, ease: "power4.out", delay: 0.2 }
     )
-    .fromTo(".hero-image",
-      { scale: 0.9, opacity: 0, y: 40 },
-      { scale: 1, opacity: 1, y: 0, duration: 1.2, ease: "expo.out" },
-      "-=0.6"
-    )
-    .fromTo(".hero-card",
-      { y: 60, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, ease: "back.out(1.2)" },
-      "-=0.8"
-    );
+      .fromTo(".hero-image",
+        { scale: 0.9, opacity: 0, y: 40 },
+        { scale: 1, opacity: 1, y: 0, duration: 1.2, ease: "expo.out" },
+        "-=0.6"
+      )
+      .fromTo(".hero-card",
+        { y: 60, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: "back.out(1.2)" },
+        "-=0.8"
+      );
 
     // 2. Our Story Set
     gsap.fromTo(".story-item",
       { y: 40, opacity: 0 },
-      { 
+      {
         y: 0, opacity: 1, duration: 1, stagger: 0.2, ease: "power3.out",
         scrollTrigger: {
           trigger: ".story-section",
@@ -56,16 +56,16 @@ export default function AboutPage() {
       { y: 30, opacity: 0 },
       { y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: "power3.out" }
     )
-    .fromTo(".mission-image",
-      { clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)" },
-      { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", duration: 1.2, ease: "power4.inOut" },
-      "-=0.4"
-    )
-    .fromTo(".mission-card",
-      { x: 40, opacity: 0 },
-      { x: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: "power3.out" },
-      "-=0.8"
-    );
+      .fromTo(".mission-image",
+        { clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)" },
+        { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", duration: 1.2, ease: "power4.inOut" },
+        "-=0.4"
+      )
+      .fromTo(".mission-card",
+        { x: 40, opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: "power3.out" },
+        "-=0.8"
+      );
 
     // 4. Team Section
     gsap.fromTo(".team-card",
