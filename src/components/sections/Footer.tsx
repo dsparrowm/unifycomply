@@ -2,37 +2,10 @@ import Link from "next/link";
 import { Facebook, Linkedin, Instagram, Send } from "lucide-react";
 import Image from "next/image";
 
-const demoUrl = "https://calendly.com/akinsanyaowolabi33/30min";
-
 export default function Footer() {
     return (
-        <footer id="contact" className="bg-white pt-24 pb-8">
+        <footer id="contact" className="bg-white pt-16 pb-8">
             <div className="container mx-auto px-6 max-w-6xl">
-
-                {/* CTO Block */}
-                <div className="bg-[#242625] rounded-[2.5rem] p-16 md:p-24 text-center text-white relative overflow-hidden mb-24">
-
-                    {/* Subtle light flares mimicking the image's gradient/lighting */}
-                    <div className="absolute top-0 left-0 w-[40%] h-full bg-gradient-to-r from-white/5 to-transparent pointer-events-none opacity-50 mix-blend-overlay"></div>
-                    <div className="absolute bottom-0 right-0 w-[60%] h-[150%] bg-gradient-to-tl from-[#3a3f3b]/30 to-transparent pointer-events-none rounded-full translate-y-1/4 translate-x-1/4 blur-3xl"></div>
-
-                    <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
-                        <h2 className="text-4xl md:text-5xl font-medium tracking-tight mb-6 leading-tight">
-                            Ready to Simplify<br />Compliance?
-                        </h2>
-                        <p className="text-[#a3a6a4] text-lg mb-10 max-w-lg leading-relaxed">
-                            Join financial companies using UnifyComply to onboard customers faster while staying fully compliant.
-                        </p>
-                        <a
-                            href={demoUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="cursor-pointer rounded-full bg-white px-8 py-3.5 text-[15px] font-semibold text-[#242625] shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-gray-100 hover:shadow-[0_16px_30px_rgba(0,0,0,0.18)] active:scale-[0.98]"
-                        >
-                            Request a Demo
-                        </a>
-                    </div>
-                </div>
 
                 {/* Footer Links Matrix */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
@@ -66,6 +39,12 @@ export default function Footer() {
                                 <Send className="w-4 h-4" />
                             </a>
                         </div>
+                        <a
+                            href="mailto:info@unifycomply.com"
+                            className="mt-6 text-[15px] font-semibold text-gray-500 hover:text-[#0f3c37] transition-colors"
+                        >
+                            info@unifycomply.com
+                        </a>
                     </div>
 
                     {/* Empty spacer for grid alignment closely matching design */}
@@ -107,8 +86,9 @@ export default function Footer() {
                 </div>
 
                 {/* Copyright */}
-                <div className="bg-[#fcfdfc] border border-gray-100/50 rounded-2xl py-5 flex items-center justify-center text-[15px] text-gray-500">
-                    © {new Date().getFullYear()} Unifycomply. All rights reserved.
+                <div className="bg-[#fcfdfc] border border-gray-100/50 rounded-2xl py-5 px-4 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-[15px] text-gray-500">
+                    <span>© {new Date().getFullYear()} Unifycomply. All rights reserved.</span>
+
                 </div>
 
             </div>

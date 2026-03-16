@@ -53,7 +53,7 @@ export default function Navbar() {
                         <Link href="/about" className="relative transition-all duration-300 hover:-translate-y-0.5 hover:text-[#164e43] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:rounded-full after:bg-[#164e43] after:transition-transform after:duration-300 hover:after:scale-x-100">
                             About Us
                         </Link>
-                        <Link href="/#contact" className="relative transition-all duration-300 hover:-translate-y-0.5 hover:text-[#164e43] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:rounded-full after:bg-[#164e43] after:transition-transform after:duration-300 hover:after:scale-x-100">
+                        <Link href="#contact" className="relative transition-all duration-300 hover:-translate-y-0.5 hover:text-[#164e43] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:rounded-full after:bg-[#164e43] after:transition-transform after:duration-300 hover:after:scale-x-100">
                             Contact Us
                         </Link>
                     </div>
@@ -103,7 +103,7 @@ export default function Navbar() {
                             About Us
                         </Link>
                         <Link
-                            href="/#contact"
+                            href="#contact"
                             className="text-[15px] font-semibold text-slate-800 py-2 border-b border-slate-50"
                             onClick={() => setMobileMenuOpen(false)}
                         >

@@ -5,6 +5,7 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import Testimonials from "@/components/sections/Testimonials";
 import Pricing from "@/components/sections/Pricing";
 import FAQ from "@/components/sections/FAQ";
+import CTASection from "@/components/sections/CTASection";
 import Footer from "@/components/sections/Footer";
 
 export default function Home() {
@@ -23,6 +24,8 @@ export default function Home() {
       {/* <Pricing /> */}
 
       <FAQ />
+
+      <CTASection />
 
       <Footer />
     </>

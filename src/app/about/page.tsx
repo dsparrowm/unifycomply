@@ -2,6 +2,7 @@
 
 import React, { useRef } from "react";
 import Footer from "@/components/sections/Footer";
+import CTASection from "@/components/sections/CTASection";
 import FAQ from "@/components/sections/FAQ";
 import { SlidersIcon, Search, ShieldCheck, Hexagon, Users, Compass } from "lucide-react";
 import Image from "next/image";
@@ -319,6 +320,7 @@ export default function AboutPage() {
             <div className="absolute -top-[3px] -right-[3px] w-1.5 h-1.5 rounded-full border border-gray-300 bg-white"></div>
           </div>
         </div>
+        <CTASection />
         <Footer />
       </div>
     </div>
